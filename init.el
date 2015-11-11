@@ -9,3 +9,4 @@
 (require 'init-editing)
 (require 'init-yasnippet)
 (require 'init-auto-complete)
+(require 'init-git)

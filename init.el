@@ -10,3 +10,4 @@
 (require 'init-yasnippet)
 (require 'init-auto-complete)
 (require 'init-git)
+(require 'init-emmet)

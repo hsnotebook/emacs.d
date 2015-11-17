@@ -15,5 +15,8 @@
 (require-package 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
+;; kill trailing whitespacs
+(add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
+
 
 (provide 'init-editing)

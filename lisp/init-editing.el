@@ -18,5 +18,10 @@
 ;; kill trailing whitespacs
 (add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
 
+;; coding system
+(setq buffer-file-coding-system 'utf-8)
+
+;; auto refresh buffer, when file in disk is changed.
+(auto-revert-mode t)
 
 (provide 'init-editing)

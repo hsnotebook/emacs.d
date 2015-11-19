@@ -24,4 +24,15 @@
 ;; auto refresh buffer, when file in disk is changed.
 (auto-revert-mode t)
 
+;; indent tabs or spaces
+(add-hook 'java-mode-hook (lambda ()
+			    (setq c-basic-offset 4
+				  tab-width 4
+				  indent-tabs-mode t)))
+(add-hook 'html-mode-hook (lambda ()
+			    (setq sgml-basic-offset 2
+				  tab-width 2
+				  indent-tabs-mode t)))
+
+
 (provide 'init-editing)

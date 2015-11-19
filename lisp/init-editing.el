@@ -33,6 +33,9 @@
 			    (setq sgml-basic-offset 2
 				  tab-width 2
 				  indent-tabs-mode t)))
+(add-hook 'nxml-mode-hook (lambda ()
+			    (setq tab-width 2
+				  indent-tabs-mode t)))
 
 
 (provide 'init-editing)

@@ -22,7 +22,7 @@
 (setq buffer-file-coding-system 'utf-8)
 
 ;; auto refresh buffer, when file in disk is changed.
-(auto-revert-mode t)
+(global-auto-revert-mode t)
 
 ;; indent tabs or spaces
 (add-hook 'java-mode-hook (lambda ()

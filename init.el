@@ -13,3 +13,4 @@
 (require 'init-emmet)
 (require 'init-html)
 (require 'init-java)
+(require 'init-theme)

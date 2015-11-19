@@ -12,3 +12,4 @@
 (require 'init-git)
 (require 'init-emmet)
 (require 'init-html)
+(require 'init-java)

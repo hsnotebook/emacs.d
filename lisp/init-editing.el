@@ -40,5 +40,8 @@
 			    (setq tab-width 2
 				  indent-tabs-mode t)))
 
+;; search regex
+(global-set-key (kbd "C-s") 'isearch-forward-regexp)
+(global-set-key (kbd "C-r") 'isearch-backward-regexp)
 
 (provide 'init-editing)

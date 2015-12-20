@@ -5,9 +5,13 @@
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
+(setq helm-mode-fuzzy-match t)
+(setq helm-completion-in-region-fuzzy-match t)
+
 (require-package 'projectile)
 (require 'projectile)
 (require-package 'helm-projectile)
+(helm-projectile-on)
 
 ;; If current working directory is project, use helm-projectile
 ;; else, user helm-fild-files

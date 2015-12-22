@@ -3,6 +3,11 @@
 
 (setq evil-search-wrap nil)
 
+(define-key evil-normal-state-map "\C-k" 'evil-window-up)
+(define-key evil-normal-state-map "\C-j" 'evil-window-down)
+(define-key evil-normal-state-map "\C-h" 'evil-window-left)
+(define-key evil-normal-state-map "\C-l" 'evil-window-right)
+
 (require-package 'evil-commentary)
 (evil-commentary-mode)
 

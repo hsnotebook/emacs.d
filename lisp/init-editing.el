@@ -4,6 +4,8 @@
 
 (electric-pair-mode t)
 
+(show-paren-mode 1)
+
 ;; multiple cursors
 (require-package 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)

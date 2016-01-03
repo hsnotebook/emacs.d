@@ -5,5 +5,32 @@
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 (setq aw-background nil)
 
+(require-package 'hydra)
+(global-set-key
+ (kbd "C-M-o")
+ (defhydra hydra-window()
+   "window"
+   ("h" windmove-left)
+   ("j" windmove-down)
+   ("k" windmove-up)
+   ("l" windmove-right)
+   ("v" (lambda ()
+	  (interactive)
+	  (split-window-right)
+	  (windmove-right))
+    "ver")
+   ("x" (lambda ()
+	  (interactive)
+	  (split-window-below)
+	  (windmove-down))
+    "horz")
+   ("o" delete-other-windows "one" :color bule)
+   ("a" ace-window "ace")
+   ("s" ace-swap-window "swap")
+   ("d" ace-delete-window "del")
+   ("i" ace-maximize-window "ace-one" :color bule)
+   ("b" ido-switch-buffer "buf")
+   ("q" nil "cancel")))
+
 
 (provide 'init-window)

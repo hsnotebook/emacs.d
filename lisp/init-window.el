@@ -1,7 +1,7 @@
 (winner-mode t)
 
 (require-package 'ace-window)
-(global-set-key (kbd "M-p") 'acen-window)
+(global-set-key (kbd "M-p") 'ace-window)
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 (setq aw-background nil)
 

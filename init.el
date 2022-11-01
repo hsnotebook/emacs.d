@@ -4,6 +4,7 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
+(blink-cursor-mode -1)
 
 (load-theme 'wombat)
 (add-to-list 'default-frame-alist
@@ -64,5 +65,14 @@
 		  (executable-find "fcitx-remote")))
     (fcitx-evil-turn-on)))
 
+(use-package smartparens
+  :config (smartparens-mode))
+
 ;; git
 (use-package magit)
+
+(use-package youdao-dictionary)
+
+(use-package ivy
+  :config
+  (ivy-mode))
